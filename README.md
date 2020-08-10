@@ -139,5 +139,5 @@ public class Startup
 ```
 
 ### Swagger UI sample
-![Foo1](https://github.com/dimitrietataru/netcore-swagger/blob/develop/images/Swagger%20-%20Foo%20v1.png)
-![Foo2](https://github.com/dimitrietataru/netcore-swagger/blob/develop/images/Swagger%20-%20Foo%20v2.png)
+![Foo1](https://github.com/dimitrietataru/netcore-swagger/blob/master/images/Swagger%20-%20Foo%20v1.png)
+![Foo2](https://github.com/dimitrietataru/netcore-swagger/blob/master/images/Swagger%20-%20Foo%20v2.png)
