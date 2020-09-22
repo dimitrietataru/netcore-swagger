@@ -73,7 +73,9 @@ namespace NetCore.SwaggerPrototype.App.Extensions
                 swaggerOptions.SwaggerEndpoint("/swagger/v1.0/swagger.json", $"v1.0");
                 swaggerOptions.SwaggerEndpoint("/swagger/v2.0/swagger.json", $"v2.0");
 
+                swaggerOptions.DocumentTitle = ".NET Core - Swagger UI";
                 swaggerOptions.RoutePrefix = "swagger";
+                swaggerOptions.DisplayRequestDuration();
             });
 
             return app;
