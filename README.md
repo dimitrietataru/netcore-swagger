@@ -1,15 +1,15 @@
 # .NET Core - Swagger
 
-### Install
+## Install
 ``` powershell
 PM> Install-Package Microsoft.AspNetCore.Mvc.Versioning -Version 4.1.1
 PM> Install-Package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer -Version 4.1.1
-PM> Install-Package Swashbuckle.AspNetCore.Swagger -Version 5.5.1
-PM> Install-Package Swashbuckle.AspNetCore.SwaggerGen -Version 5.5.1
-PM> Install-Package Swashbuckle.AspNetCore.SwaggerUi -Version 5.5.1
+PM> Install-Package Swashbuckle.AspNetCore.Swagger -Version 5.6.2
+PM> Install-Package Swashbuckle.AspNetCore.SwaggerGen -Version 5.6.2
+PM> Install-Package Swashbuckle.AspNetCore.SwaggerUi -Version 5.6.2
 ```
 
-### Extensions
+## Extensions
 ``` csharp
 public static class ApiVersioningExtensions
 {
@@ -99,10 +99,12 @@ public static class SwaggerExtensions
 
         app.UseSwaggerUI(swaggerOptions =>
         {
-            swaggerOptions.SwaggerEndpoint("/swagger/v1.0/swagger.json", "v1.0");
-            swaggerOptions.SwaggerEndpoint("/swagger/v2.0/swagger.json", "v2.0");
+            swaggerOptions.SwaggerEndpoint("/swagger/v1.0/swagger.json", $"v1.0");
+            swaggerOptions.SwaggerEndpoint("/swagger/v2.0/swagger.json", $"v2.0");
 
+            swaggerOptions.DocumentTitle = ".NET Core - Swagger UI";
             swaggerOptions.RoutePrefix = "swagger";
+            swaggerOptions.DisplayRequestDuration();
         });
 
         return app;
@@ -110,7 +112,7 @@ public static class SwaggerExtensions
 }
 ```
 
-### Usage
+## Usage
 ``` csharp
 public class Startup
 {
@@ -138,6 +140,6 @@ public class Startup
 }
 ```
 
-### Swagger UI sample
+## Swagger UI sample
 ![Foo1](https://github.com/dimitrietataru/netcore-swagger/blob/master/images/Swagger%20-%20Foo%20v1.png)
 ![Foo2](https://github.com/dimitrietataru/netcore-swagger/blob/master/images/Swagger%20-%20Foo%20v2.png)
