@@ -4,9 +4,9 @@
 ``` powershell
 PM> Install-Package Microsoft.AspNetCore.Mvc.Versioning -Version 4.1.1
 PM> Install-Package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer -Version 4.1.1
-PM> Install-Package Swashbuckle.AspNetCore.Swagger -Version 5.6.2
-PM> Install-Package Swashbuckle.AspNetCore.SwaggerGen -Version 5.6.2
-PM> Install-Package Swashbuckle.AspNetCore.SwaggerUi -Version 5.6.2
+PM> Install-Package Swashbuckle.AspNetCore.Swagger -Version 5.6.3
+PM> Install-Package Swashbuckle.AspNetCore.SwaggerGen -Version 5.6.3
+PM> Install-Package Swashbuckle.AspNetCore.SwaggerUi -Version 5.6.3
 ```
 
 ## Extensions
