@@ -1,4 +1,4 @@
-# .NET Core - Swagger
+# .NET - Swagger
 
 ## Install
 ``` powershell
